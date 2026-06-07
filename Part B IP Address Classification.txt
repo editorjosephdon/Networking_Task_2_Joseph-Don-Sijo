@@ -1,0 +1,27 @@
+Part B: IP Address Classification
+
+To determine whether an IP address is public or private, we look at the guidelines set by the Internet Assigned Numbers Authority (IANA). They reserved three specific blocks of IP addresses specifically for Private use (internal networks, like a home or office LAN). Any address outside of these specific blocks is considered Public (routable on the open internet).
+
+Here are the reserved Private IP ranges (RFC 1918):
+
+10.0.0.0 to 10.255.255.255
+172.16.0.0 to 172.31.255.255
+192.168.0.0 to 192.168.255.255
+
+192.168.1.10 - Private
+It falls squarely within the reserved 192.168.x.x private block. You will frequently see this assigned to devices on home Wi-Fi networks.
+
+10.0.0.5 - Private
+It falls within the reserved 10.x.x.x private block. This range is massive and is often used by large corporate networks or enterprise environments.
+
+172.16.5.20 - Private
+It falls within the reserved 172.16.x.x to 172.31.x.x private block. This is a medium-sized block often used in corporate LANs or Docker/virtualization networks.
+
+8.8.8.8 - Public
+It falls outside all three reserved private blocks, meaning it is routable on the global internet. This specific IP belongs to Google and operates as their primary Public DNS server.
+
+1.1.1.1	- Public
+It falls outside all three reserved private blocks. This specific IP belongs to Cloudflare and operates as their privacy-focused Public DNS server.
+
+192.168.100.1 - Private
+Like the first IP on this list, it falls within the reserved 192.168.x.x private block. It is very common to see this specific address used as the default login IP for a home router.

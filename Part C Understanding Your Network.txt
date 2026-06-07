@@ -1,0 +1,15 @@
+Part C: Understanding Your Network
+
+1. Which IP range does your device belong to?
+192.168.0.0 to 192.168.255.255
+
+2. Is it Public or Private?
+Private IP range.
+
+3. What role does your router play in your network?
+The Traffic Director: When you send data to another computer on the same local network, the router (using its built-in switch) keeps that traffic local. When you request data from the outside internet, the router knows to send that request out through the modem.
+
+Network Address Translation (NAT): Because your computer has a Private IP address, it cannot talk directly to the public internet. Your router acts as a middleman, taking your computer's private request, swapping the return address to its own Public IP, sending it to the internet, and then routing the response back to your specific device.
+
+4. What would happen if the DNS server stopped working?
+DNS server goes down, your internet connection is technically still active, but you cannot browse the web normally

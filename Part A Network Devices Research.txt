@@ -1,0 +1,43 @@
+Part A: Network Devices Research
+
+1. Router
+Purpose: Connects different networks together and directs data traffic between them. It acts as the "traffic director" of the internet.
+
+How it works: Operating at the network layer (Layer 3), a router reads the destination IP (Internet Protocol) addresses of incoming data packets. It then consults internal routing tables to calculate the fastest and most efficient path to send that data to its next stop.
+
+Real-world usage: Your home Wi-Fi router connects your private local home network to the public network of your Internet Service Provider (ISP), allowing your phone and laptop to access the broader internet.
+
+2. Switch
+Purpose: Connects multiple devices together within a single Local Area Network (LAN) so they can communicate seamlessly.
+
+How it works: Operating at the data link layer (Layer 2), a switch is a "smart" device. It learns the physical MAC (Media Access Control) addresses of every device plugged into it. When it receives data, it sends it only to the specific port where the destination device is connected, drastically reducing network congestion.
+
+Real-world usage: Connecting dozens of desktop computers, printers, and internal servers together via Ethernet cables in a corporate office building.
+
+3. Hub
+Purpose: A legacy device used to connect multiple devices in a LAN. It serves the same basic physical purpose as a switch, but without any intelligence.
+
+How it works: Operating at the physical layer (Layer 1), a hub is essentially a repeater. When it receives a data packet on one port, it blindly copies and broadcasts that exact packet out to every other port, regardless of which device the data is actually meant for.
+
+Real-world usage: Hubs are mostly obsolete today due to their inefficiency (they cause data collisions and slow down networks) and security risks. However, they are occasionally used by IT professionals for simple network troubleshooting or "packet sniffing," as all traffic can be easily monitored from any port.
+
+4. Access Point (AP)
+Purpose: Creates a Wireless Local Area Network (WLAN), acting as a bridge that allows Wi-Fi devices to connect to a wired network.
+
+How it works: An access point connects to a wired router or switch via an Ethernet cable. It contains a radio transmitter and receiver that translates wireless radio signals from your devices (like your smartphone) into wired data signals that the rest of the network can process.
+
+Real-world usage: Providing Wi-Fi coverage across a large university library or an airport terminal. To cover large areas, network engineers install dozens of APs on the ceilings, all wired back to a central switch. (Note: Most home "routers" are actually combination devices that include a router, a switch, and an access point all in one box).
+
+5. Firewall
+Purpose: Acts as a digital security guard, protecting a network by monitoring and controlling incoming and outgoing traffic.
+
+How it works: A firewall sits at the boundary between a trusted internal network and an untrusted external network (like the Internet). It inspects every data packet against a strict set of predefined security rules—such as blocking specific IP addresses, ports, or applications—and drops malicious or unauthorized traffic before it can enter.
+
+Real-world usage: A bank using an enterprise hardware firewall to prevent hackers from accessing customer databases, or the software firewall built into Windows (Windows Defender) preventing unauthorized apps from sending your data outward.
+
+6. Modem (Modulator-Demodulator)
+Purpose: Translates the digital signals used by your home computers into a format that can travel over the physical infrastructure of your Internet Service Provider, and vice versa.
+
+How it works: Computers communicate using digital signals (1s and 0s), but the cables outside your home often use analog signals (like radio frequencies over a coaxial cable or light pulses over fiber optics). The modem modulates your outgoing digital data into analog signals and demodulates incoming analog signals back into digital data.
+
+Real-world usage: The physical box provided by Comcast, AT&T, or Spectrum that connects directly to the wall outlet via a coaxial cable or fiber-optic line. Without a modem, your router cannot talk to your ISP.

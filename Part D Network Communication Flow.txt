@@ -1,0 +1,16 @@
+Part D: Network Communication Flow
+
+1. Your Device
+When you type www.google.com into your browser and press Enter, your device first checks its local "DNS cache" to see if it already knows the IP address for that domain name. If it's not cached, it formulates a "DNS query" and sends it to the configured DNS server address on its network interface.
+
+2. Router (Default Gateway)
+Your device doesn't know where the DNS server is in the real world, so it sends the DNS query to its "default gateway" — your router. The router, acting as the interface between your local private network and the broader internet via your modem, then forwards the query out through your internet modem.
+
+3. DNS Server
+The DNS (Domain Name System) server, acting like the phonebook of the internet, receives the query for www.google.com. It performs a hierarchical lookup across multiple other DNS servers to find the associated IPv4 or IPv6 address and then sends a response with this destination information back through your router and to your device.
+
+4. Google Server
+Your device, now having Google's actual IP address, uses that to establish a new connection. It then sends an "HTTP GET" request across the internet directly to a specific Google server, which processes the request and prepares the HTML, images, and other resources that make up the webpage.
+
+5. Webpage Response Back to Device
+The Google server sends all of the webpage data packets back across the internet, routed through your router, to your specific device. Your browser receives these packets, reads the files, and uses its engine to render and display the final webpage on your screen.

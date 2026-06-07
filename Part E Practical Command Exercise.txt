@@ -1,0 +1,10 @@
+Part E: Practical Command Exercise
+
+1. What IP address did DNS return for Google?
+2404:6800:4000:1017::71
+
+2. Was the ping successful?
+Yes
+
+3.Why is DNS important before communication begins?
+Computers and networking routers do not understand human-readable domain names like google.com they only know how to route traffic to numerical IP addresses. DNS (Domain Name System) acts as the internet's directory.
